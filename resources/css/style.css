@@ -49,8 +49,20 @@ body {
     margin-left: 49vh; 
 }
 
+.btn-search-custom {
+    background-color: var(--color-s);
+}
+
 /* IMPOSTAZIONI HEADER */
 
 .header-custom {
     padding: 200px;
+}
+
+.btn-header-custom {
+    background-color: var(--color-p);
+    color: var(--color-s);
+    border: var(--color-s) 1px solid;
+    padding: 15px;
+    text-decoration: none;
 }

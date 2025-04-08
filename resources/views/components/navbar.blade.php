@@ -11,7 +11,7 @@
             <span class="navbar-toggler-icon"></span>
             </button>
 
-                {{-- PARTE CENTRALE --}}
+            {{-- PARTE CENTRALE --}}
 
             <div class="collapse navbar-collapse" id="navbarsExample09">
                 <ul class="navbar-nav nav-links me-auto mb-2 mb-lg-0">
@@ -31,10 +31,13 @@
                     </li>
                 </ul>
 
-                {{-- PARTE DESTRA --}}
+            {{-- PARTE DESTRA --}}
 
-                <form role="search">
-                    <input class="form-control fontS" type="search" placeholder="Cerca" aria-label="Search">
+                <form class="d-flex" action="{{ route('search') }}" method="GET">
+                    <input class="form-control fontS rounded border mx-3" type="text" placeholder="Cerca" aria-label="Search">
+                    <button type="submit" class="btn btn-search-custom">   
+                        <i class="bi bi-search"></i>                    
+                    </button>
                 </form>
             </div>
         </div>

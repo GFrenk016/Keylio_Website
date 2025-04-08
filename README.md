@@ -1,4 +1,4 @@
-<!-- PRIMA FASE - IMPOSTAZIONI GENERALI -->
+<!-- PRIMA FASE - Impostazioni generali -->
 
 Obiettivo: costruire la pagina iniziale e tutte le impostazioni generali.
 
@@ -6,11 +6,11 @@ Obiettivo: costruire la pagina iniziale e tutte le impostazioni generali.
 
 [X] Logo + nome sito
 
-[] Barra di ricerca dei giochi
+[X] Barra di ricerca dei giochi
 
-[] Lista giochi in offerta (es. "Top Risparmi del giorno")
+[X] Lista giochi in offerta (es. "Top Risparmi del giorno")
 
-[] Filtri base (es. piattaforma: Steam, Xbox, etc.)
+[] Filtri base nella ricerca e come bottoni nella homepage (es. piattaforma: Steam, Xbox, etc.)
 
 [] Showcase: “Compara e risparmia fino al 90%!”
 
