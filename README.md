@@ -2,9 +2,9 @@
 
 Obiettivo: costruire la pagina iniziale e tutte le impostazioni generali.
 
-[] Impostare database, controller, views e layout, e scegliere colori e fonts;
+[X] Impostare database, controller, views e layout, e scegliere colori e fonts;
 
-[] Logo + nome sito
+[X] Logo + nome sito
 
 [] Barra di ricerca dei giochi
 

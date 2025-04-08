@@ -1,9 +1,11 @@
+{{-- HEADER HOMEPAGE --}}
+
 <x-layout>
-    <div class="container mt-5">
+    <header class="container mt-5 header-custom">
         <div class="row justify-content-center">
-            <div class="col">
-                <h1 class="text-center text-danger">Benvenuto su Keylio!</h1>
+            <div class="col-12">
+                <h1 class="text-center fontS colorS fw-bold">Benvenuto su Keylio!</h1>
             </div>
         </div>
-    </div>
+    </header>
 </x-layout>

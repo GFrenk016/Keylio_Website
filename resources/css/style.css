@@ -1,3 +1,56 @@
+/* IMPOSTAZIONI GENERALI */
+
+:root {
+    --color-p: #342E37;
+    --color-s: #FAFFFD;
+}
+
+.colorP {
+    color: var(--color-p);
+}
+
+.colorS {
+    color: var(--color-s);
+}
+
+.fontP {
+    font-family: "Spectral SC", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.fontS {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
-    background-color: black;
+    background-color: var(--color-p);
+    color: var(--color-s);
+}
+
+/* IMPOSTAZIONI NAV */
+
+.navbar-custom {
+    background-color: var(--color-p);
+    color: var(--color-s);
+    border: var(--color-s) 1px solid;
+    position: fixed;
+    width: 70%;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    margin-left: 49vh; 
+}
+
+/* IMPOSTAZIONI HEADER */
+
+.header-custom {
+    padding: 200px;
 }
