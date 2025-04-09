@@ -38,6 +38,8 @@ body {
     border: var(--color-s) 1px solid;
     position: fixed;
     width: 70%;
+    z-index: 1;
+    padding: 20px;
 }
 
 .navbar-logo {
@@ -46,7 +48,7 @@ body {
 }
 
 .nav-links {
-    margin-left: 49vh; 
+    margin-left: 45vh; 
 }
 
 .btn-search-custom {
@@ -56,13 +58,20 @@ body {
 /* IMPOSTAZIONI HEADER */
 
 .header-custom {
-    padding: 200px;
+    padding: 150px;
 }
 
-.btn-header-custom {
+.btn-custom {
     background-color: var(--color-p);
     color: var(--color-s);
-    border: var(--color-s) 1px solid;
+    border: var(--color-s) 2px solid;
     padding: 15px;
+    font-size: 20px;
     text-decoration: none;
+    margin-top: 50px;
+}
+
+.card-body {
+    background-color: var(--color-p);
+    color: var(--color-s);
 }

@@ -10,17 +10,17 @@ Obiettivo: costruire la pagina iniziale e tutte le impostazioni generali.
 
 [X] Lista giochi in offerta (es. "Top Risparmi del giorno")
 
-[] Filtri base nella ricerca e come bottoni nella homepage (es. piattaforma: Steam, Xbox, etc.)
+[X] Filtri nella homepage (es. piattaforma: Steam, Xbox, etc.)
 
-[] Showcase: “Compara e risparmia fino al 90%!”
+[X] Showcase: “Compara e risparmia fino al 90%!”
 
-[] Call to action: "Iscriviti per ricevere offerte esclusive"
+[X] Call to action: "Iscriviti per ricevere offerte esclusive"
 
 <!-- SECONDA FASE – Funzionalità dinamiche & gestione dati -->
 
 Obiettivo: rendere dinamici i contenuti della homepage e strutturare il core dati del sito.
 
-[] Collegamento al database e creazione modello Game
+[X] Collegamento al database e creazione modello Game
 
 [] Seeder con giochi di esempio (nome, prezzo, piattaforma, immagine)
 

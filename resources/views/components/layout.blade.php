@@ -18,16 +18,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan&family=Spectral+SC:wght@800&display=swap" rel="stylesheet">
 
-    {{-- VITE CSS/JS  --}}
-
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
     {{-- BOOTSTRAP ICONS --}}
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    {{-- VITE CSS/JS  --}}
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <x-navbar/>
     {{ $slot }}
+    <x-footer/>
 </body>
 </html>
