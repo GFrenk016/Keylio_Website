@@ -34,7 +34,7 @@
             {{-- PARTE DESTRA --}}
 
                 <form class="d-flex" action="{{ route('search') }}" method="GET">
-                    <input class="form-control fontS rounded border mx-3" type="text" placeholder="Cerca" aria-label="Search">
+                    <input class="form-control fontS rounded border mx-3" type="text" placeholder="Cerca" aria-label="Search" name="q">
                     <button type="submit" class="btn btn-search-custom">   
                         <i class="bi bi-search"></i>                    
                     </button>

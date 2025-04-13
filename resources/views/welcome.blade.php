@@ -27,7 +27,7 @@
                                 <img src="https://picsum.photos/300/200?random={{ $game->image }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h4 class="card-title fontS fw-bold">{{ Str::limit($game->title, 25) }}</h5>
-                                    <p class="card-text fontS fs-4">{{ $game->key_store }}</p>
+                                    <p class="card-text fontS fs-4">{{ $game->store }}</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span class="fw-bold fs-4 fontS text-success">€{{ $game->price }}</span>
                                         <a href="#" class="btn btn-custom fontS">Compra</a>
@@ -58,9 +58,10 @@
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">{{ Str::limit($game->title, 25) }}</h5>
-                                        <p class="card-text">{{ $game->key_store }}</p>
+                                        <p class="card-text">{{ $game->store }}</p>
                                         <div class="d-flex">
                                             <span class="fw-bold text-success">€{{ $game->price }}</span>
+                                            <span class="text-decoration-line-through text-secondary mx-3">€{{ $game->original_price }}</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             @if ($game->discountPercentage)

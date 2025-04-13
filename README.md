@@ -26,7 +26,7 @@ Obiettivo: rendere dinamici i contenuti della homepage e strutturare il core dat
 
 [X] Mostrare giochi in offerta da DB in homepage
 
-[] Implementazione barra di ricerca funzionante (query sui titoli)
+[X] Implementazione barra di ricerca funzionante (query sui titoli)
 
 [] Gestione filtri: piattaforma, fascia prezzo, regione
 
