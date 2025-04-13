@@ -16,26 +16,29 @@
             </div>
         </section>
 
-        <!-- Top Risparmi del Giorno -->
+        <!-- Top Risparmi -->
         <section class="py-5">
             <div class="container">
-                <h2 class="mb-5 text-center fontS fw-bold">Top Risparmi del Giorno</h2>
+                <h2 class="mb-5 text-center fontS fw-bold">Top Risparmi</h2>
                 <div class="row">
-                    @for ($i = 0; $i < 3; $i++)
+                    @foreach ($games->take(3) as $game)
                         <div class="col-md-4">
                             <div class="card h-100">
-                                <img src="https://picsum.photos/300/200?random={{ $i }}" class="card-img-top" alt="...">
+                                <img src="https://picsum.photos/300/200?random={{ $game->image }}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h4 class="card-title fontS fw-bold">Gioco In Offerta {{ $i + 1 }}</h5>
-                                    <p class="card-text fontS fs-4">Piattaforma</p>
+                                    <h4 class="card-title fontS fw-bold">{{ Str::limit($game->title, 25) }}</h5>
+                                    <p class="card-text fontS fs-4">{{ $game->key_store }}</p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <span class="fw-bold fs-4 fontS text-success">€19.99</span>
-                                        <a href="#" class="btn btn-custom fontS">Compra ora</a>
+                                        <span class="fw-bold fs-4 fontS text-success">€{{ $game->price }}</span>
+                                        <a href="#" class="btn btn-custom fontS">Compra</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    @endfor
+                    @endforeach
+                </div>
+                <div class="text-center mt-2">
+                    <a href="#" class="btn btn-custom fontS">Scopri di più</a>
                 </div>
             </div>
         </section>
@@ -47,25 +50,31 @@
                 <div class="col-lg-6 col-md-12 mb-4">
                     <h2 class="fw-bold mb-4 fontS">In arrivo</h2>
                     <div class="row g-4">
-                        @for ($i = 0; $i < 5; $i++)
+                        @foreach ($games->take(5) as $game)
                             <div class="col-12">
                                 <div class="card fontS h-100 d-flex flex-row">
-                                    <img src="https://picsum.photos/100/200?random={{ $i }}" class="img-fluid rounded-start" alt="...">
+                                    <div class="col-md-4">
+                                        <img src="{{ $game->image }}" class="img-fluid rounded-start card-img" alt="...">
+                                    </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Titolo In Arrivo {{ $i + 1 }}</h5>
-                                        <p class="card-text">Piattaforma</p>
+                                        <h5 class="card-title">{{ Str::limit($game->title, 25) }}</h5>
+                                        <p class="card-text">{{ $game->key_store }}</p>
                                         <div class="d-flex">
-                                            <span class="fw-bold text-success">€59.99</span>
-                                            <span class="text-decoration-line-through text-secondary mx-3">€69.99</span>
+                                            <span class="fw-bold text-success">€{{ $game->price }}</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <p class="text-white mt-2">-14%</p>
+                                            @if ($game->discountPercentage)
+                                                <p class="text-white fontS mt-2">-{{ $game->discountPercentage }}%</p>
+                                            @endif
                                             <a href="#" class="btn btn-custom mt-2">Preordina</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        @endfor
+                        @endforeach
+                    </div>
+                    <div class="text-center mt-2">
+                        <a href="#" class="btn btn-custom fontS">Scopri di più</a>
                     </div>
                 </div>
 
@@ -76,7 +85,9 @@
                         @for ($i = 0; $i < 5; $i++)
                             <div class="col-12">
                                 <div class="card fontS h-100 d-flex flex-row">
-                                    <img src="https://picsum.photos/100/200?random={{ $i }}" class="img-fluid rounded-start" alt="...">
+                                    <div class="col-md-4">
+                                        <img src="{{ $game->image }}" class="img-fluid rounded-start card-img" alt="...">
+                                    </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Titolo In Arrivo {{ $i + 1 }}</h5>
                                         <p class="card-text">Piattaforma</p>
@@ -85,13 +96,18 @@
                                             <span class="text-decoration-line-through text-secondary mx-3">€69.99</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <p class="text-white mt-2">-14%</p>
+                                            @if ($game->discountPercentage)
+                                                <p class="text-white fontS mt-2">-{{ $game->discountPercentage }}%</p>
+                                            @endif
                                             <a href="#" class="btn btn-custom mt-2">Compra ora</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         @endfor
+                    </div>
+                    <div class="text-center mt-2">
+                        <a href="#" class="btn btn-custom fontS">Scopri di più</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +127,9 @@
                         @for ($i = 0; $i < 5; $i++)
                             <div class="col-12">
                                 <div class="card fontS h-100 d-flex flex-row">
-                                    <img src="https://picsum.photos/100/200?random={{ $i }}" class="img-fluid rounded-start" alt="...">
+                                    <div class="col-md-4">
+                                        <img src="{{ $game->image }}" class="img-fluid rounded-start card-img" alt="...">
+                                    </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Titolo In Arrivo {{ $i + 1 }}</h5>
                                         <p class="card-text">Piattaforma</p>
@@ -120,13 +138,18 @@
                                             <span class="text-decoration-line-through text-secondary mx-3">€69.99</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <p class="text-white mt-2">-14%</p>
+                                            @if ($game->discountPercentage)
+                                                <p class="text-white fontS mt-2">-{{ $game->discountPercentage }}%</p>
+                                            @endif
                                             <a href="#" class="btn btn-custom mt-2">Compra ora</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         @endfor
+                    </div>
+                    <div class="text-center mt-2">
+                        <a href="#" class="btn btn-custom fontS">Scopri di più</a>
                     </div>
                 </div>
 
@@ -137,7 +160,9 @@
                         @for ($i = 0; $i < 5; $i++)
                             <div class="col-12">
                                 <div class="card fontS h-100 d-flex flex-row">
-                                    <img src="https://picsum.photos/100/200?random={{ $i }}" class="img-fluid rounded-start" alt="...">
+                                    <div class="col-md-4">
+                                        <img src="{{ $game->image }}" class="img-fluid rounded-start card-img" alt="...">
+                                    </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Titolo In Arrivo {{ $i + 1 }}</h5>
                                         <p class="card-text">Piattaforma</p>
@@ -146,13 +171,18 @@
                                             <span class="text-decoration-line-through text-secondary mx-3">€69.99</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <p class="text-white mt-2">-14%</p>
+                                            @if ($game->discountPercentage)
+                                                <p class="text-white fontS mt-2">-{{ $game->discountPercentage }}%</p>
+                                            @endif
                                             <a href="#" class="btn btn-custom mt-2">Compra ora</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         @endfor
+                    </div>
+                    <div class="text-center mt-2">
+                        <a href="#" class="btn btn-custom fontS">Scopri di più</a>
                     </div>
                 </div>
             </div>
@@ -211,6 +241,10 @@
                 </div>
             </div>
         </section>
+
+        <div class="border-bottom opacity-0 h-100">
+            <p class="fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis harum, sequi enim sapiente vel aliquam minus dignissimos odit ipsam ex architecto aliquid, tempore fugiat eius, quos iusto iste quaerat? A.</p>
+        </div>
 
         <!-- Showcase -->
         <section class="bg-secondary text-white py-5 fontS">

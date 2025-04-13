@@ -19,7 +19,7 @@
                     <a class="nav-link colorS fontS fs-4" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link colorS fontS fs-4" href="#">Link</a>
+                    <a class="nav-link colorS fontS fs-4" href="{{ route('search') }}">Cerca</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link colorS fontS dropdown-toggle fs-4" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>

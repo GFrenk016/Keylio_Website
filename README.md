@@ -22,9 +22,9 @@ Obiettivo: rendere dinamici i contenuti della homepage e strutturare il core dat
 
 [X] Collegamento al database e creazione modello Game
 
-[] Seeder con giochi di esempio (nome, prezzo, piattaforma, immagine)
+[X] Seeder con giochi di esempio (nome, prezzo, piattaforma, immagine)
 
-[] Mostrare giochi in offerta da DB in homepage
+[X] Mostrare giochi in offerta da DB in homepage
 
 [] Implementazione barra di ricerca funzionante (query sui titoli)
 

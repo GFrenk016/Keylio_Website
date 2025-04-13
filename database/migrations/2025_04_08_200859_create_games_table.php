@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('games', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('price');
-            $table->string('original_price');
-            $table->string('platform');
+            $table->decimal('price');
+            $table->decimal('original_price');
+            $table->string('key_store');
             $table->string('genre');
             $table->string('image');
             $table->string('store');

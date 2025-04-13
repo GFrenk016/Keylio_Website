@@ -9,12 +9,8 @@ class GeneralController extends Controller
 {
     public function homepage()
     {
-        // $topDeals = Game::orderByRaw('original_price - price DESC')
-        //     ->take(6)
-        //     ->get();
+        $games = Game::all();
 
-        // return view('welcome', compact('topDeals'));
-
-        return view('welcome');
+        return view('welcome', compact('games'));
     }
 }
