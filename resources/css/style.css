@@ -72,6 +72,10 @@ body {
     margin-top: 50px;
 }
 
+.card-title {
+    font-size: 15px;
+}
+
 .card-body {
     background-color: var(--color-p);
     color: var(--color-s);
@@ -88,3 +92,10 @@ body {
 .search-container {
     padding: 130px 280px;
 }
+
+.form-select-custom {
+    font-size: 13px;
+}
+
+
+

@@ -28,7 +28,7 @@ Obiettivo: rendere dinamici i contenuti della homepage e strutturare il core dat
 
 [X] Implementazione barra di ricerca funzionante (query sui titoli)
 
-[] Gestione filtri: piattaforma, fascia prezzo, regione
+[X] Gestione filtri: piattaforma, fascia prezzo, regione
 
 [] Paginazione risultati (Laravel + Tailwind)
 

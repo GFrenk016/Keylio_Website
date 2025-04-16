@@ -16,7 +16,7 @@
             <div class="collapse navbar-collapse" id="navbarsExample09">
                 <ul class="navbar-nav nav-links me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link colorS fontS fs-4" aria-current="page" href="#">Home</a>
+                    <a class="nav-link colorS fontS fs-4" aria-current="page" href="{{ route('welcome') }}">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link colorS fontS fs-4" href="{{ route('search') }}">Cerca</a>
